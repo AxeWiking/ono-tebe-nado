@@ -1,13 +1,13 @@
 .address {
   font-family: Raleway, sans-serif;
+  font-style: normal;
 }
 
 .header {
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
   place-items: center;
-  margin: 94px 24px 94px;  
-
+  margin: 92px 24px 92px;
   font-size: 18px;
 }
 
@@ -42,12 +42,13 @@
 }
 
 .header__logo-image {
-  vertical-align: top;  
   height: 105px;
+  vertical-align: top;  
 }
 
 .header__address {
   justify-self: end;
   padding-right: 38px;
   margin-right: 26px;
+  line-height: 1.3;
 }
