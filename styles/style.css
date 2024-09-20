@@ -1,18 +1,14 @@
-
-/* body {
-  background-color: azure;
-} */
+.address {
+  font-family: Raleway, sans-serif;
+}
 
 .header {
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
   place-items: center;
-  margin-top: 96px;  
-  margin-left: 24px;
-  margin-right: 24px;
+  margin: 94px 24px 94px;  
 
   font-size: 18px;
-  /* background-color: blue; */
 }
 
 .header__menu {
@@ -28,7 +24,7 @@
 }
 
 .header__links-list-item {
-  padding-left: 13px;
+  padding-left: 11px;
 }
 
 .header__link_active {
@@ -41,6 +37,7 @@
 }
 
 .header__logo {
+  display: block;
   width: 148px;
 }
 
