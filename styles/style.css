@@ -60,6 +60,7 @@
   background-size: cover;
   background-position: center;
   color: white;
+  z-index: -2;
 }
 
 .cover__title {
@@ -127,5 +128,5 @@
   inset: 0;
   opacity: 0.5;
   background-color: black;
-  z-index: 1;
+  z-index: -1;
 }
