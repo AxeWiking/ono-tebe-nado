@@ -54,9 +54,11 @@
 }
 
 .cover {
-  margin: 92px 0 92px;
+  margin: 94px 0 94px;
   position: relative;
   background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
   color: white;
 }
 
@@ -65,7 +67,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 657px;
-  padding: 168px 50px 132px;
+  padding: 166px 50px 128px;
   font-weight: bold;
   font-size: 100px;
   line-height: 115px;
@@ -90,12 +92,10 @@
 
 .indent-char {
   letter-spacing: 60px;
-  color: blue;
 }
 
 .closed-char {
   letter-spacing: 0px;
-  color: red;
 }
 
 .cover__description {
@@ -111,7 +111,7 @@
 .cover__description-text {
   display: block;
   text-transform: uppercase;
-  word-spacing: 19px;  
+  word-spacing: 19px;
   padding-left: 25px;
 }
 
