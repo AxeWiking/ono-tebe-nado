@@ -161,7 +161,6 @@
 }
 
 .card-link {
-  display: block;
   display: flex;
   align-items: stretch;
   text-decoration: none;
