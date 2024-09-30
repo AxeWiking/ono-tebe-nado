@@ -1,6 +1,12 @@
 .address {
+  max-width: 210px;
   font-family: Raleway, sans-serif;
   font-style: normal;
+  line-height: 1.3em;
+}
+
+.link_active {
+  text-decoration: none;
 }
 
 .header {
@@ -19,21 +25,16 @@
 .header__links-list {
   display: flex;
   justify-content: space-between;
+  column-gap: 13px;
   list-style-position: inside;
-  list-style-type: circle;
 }
 
 .header__links-list-item {
-  padding-left: 13px;
+  list-style-type: circle;
 }
 
-.header__link_active {
-  padding-left: 0;
+.header__links-list-item-first {
   list-style-type: none;
-}
-
-.header__link_active a {
-  text-decoration: none;
 }
 
 .header__logo {
@@ -48,14 +49,12 @@
 
 .header__address {
   justify-self: end;
-  margin-right: 26px;
-  padding-right: 38px;
-  line-height: 1.3;
+  margin-right: 54px;
 }
 
 .cover {
   position: relative;
-  z-index: -2;
+  z-index: 0;
   margin: 94px 0 175px;
   color: white;
   background-image: url(../images/cover.jpg);
@@ -66,8 +65,8 @@
 .cover__title {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 657px;
+  justify-content: flex-start;
+  row-gap: 8px;
   padding: 166px 50px 128px;
   font-weight: bold;
   font-size: 100px;
@@ -103,8 +102,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
-  padding: 0px 50px 45px;
+  padding: 0px 50px 50px;
   font-size: 22px;
   line-height: 1.3em;
 }
@@ -129,15 +127,15 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.6;
   background-color: black;
 }
 
 .loots {
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
-  height: 692px;
+  justify-content: flex-start;
+  row-gap: 26px;
   margin: 140px 25px 140px;
 }
 
@@ -151,28 +149,36 @@
 
 .lots__card-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  row-gap: 25px;
 }
 
 .lots__card-list-item {
+  display: flex;
+  align-items: stretch;
   list-style-type: none;
 }
 
 .card-link {
   display: block;
+  display: flex;
+  align-items: stretch;
   text-decoration: none;
 } 
 
 .card {
   position: relative;
-  z-index: -2;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 334px;
-  height: 563px;
-  padding: 52px 40px 50px;
+  min-height: 563px;
+  padding: 50px 40px 50px;
   color: white;
+  background-position: center;
+  background-size: cover;
 }
 
 .card__title {
@@ -189,9 +195,7 @@
 }
 
 .lots__look-more-link {
-  position: relative;
-  top: 5px;
-  padding-left: 37px;
+  padding-left: 38px;
   font-size: 20px;
   line-height: 1.15em;
   text-transform: lowercase;
@@ -199,35 +203,29 @@
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .about {
   display: grid;
   grid-template-columns: 334px 1fr;
-  grid-template-rows: 334px 1fr;
   grid-template-areas: "logo title" "none text";
-  height: 595px;
-  margin: 140px 25px 140px;
+  row-gap: 10px;
+  column-gap: 24px;
+  margin: 185px 25px 155px;
 }
 
 .about__logo {
   display: flex;
   grid-area: logo;
-  place-self: center;
+  justify-self: center;
   width: 240px;
   height: 240px;
   border-radius: 50%;
@@ -242,7 +240,6 @@
 .about__title {
   grid-area: title;
   align-self: center;
-  padding-left: 20px;
   font-weight: bold;
   font-size: 40px;
   line-height: 1.2em;
@@ -250,10 +247,7 @@
 }
 
 .about__column {
-  position: relative;
-  bottom: 40px;
   grid-area: text;
-  padding-left: 19px;
   font-size: 20px;
   line-height: 1.2em;
 }
@@ -267,14 +261,13 @@
   grid-template-columns: 2fr 1fr 2fr;
   justify-items: center;
   align-content: start;
-  margin: 192px 24px 98px;
+  margin: 155px 24px 98px;
   font-size: 18px;
 }
 
 .footer__address {
   justify-self: start;
-  padding-left: 26px;
-  line-height: 1.3;
+  margin-left: 28px;
 }
 
 .footer__links-list {
@@ -282,10 +275,6 @@
   flex-direction: column;
   align-items: center;
   list-style-type: none;
-}
-
-.footer__link_active a {
-  text-decoration: none;
 }
 
 .footer__social-list {
@@ -300,6 +289,6 @@
 }
 
 .footer__social-icon {
-  height: 48px;
+  width: 48px;
   vertical-align: top;
 }
