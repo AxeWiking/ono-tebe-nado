@@ -33,13 +33,18 @@
   list-style-type: circle;
 }
 
-.header__links-list-item-first {
+.header__links-list-item-no_bullit {
   list-style-type: none;
+}
+
+.header__link {
+  text-underline-offset: 25%;
 }
 
 .header__logo {
   display: block;
   width: 148px;
+  margin: 0 auto;
 }
 
 .header__logo-image {
@@ -197,7 +202,8 @@
   padding-left: 38px;
   font-size: 20px;
   line-height: 1.15em;
-  text-transform: lowercase;
+  text-underline-offset: 25%;
+  text-transform: lowercase;  
 }
 
 .card_type_film {
@@ -269,11 +275,15 @@
   margin-left: 28px;
 }
 
-.footer__links-list {
+.footer__menu-links-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   list-style-type: none;
+}
+
+.footer__menu-link {
+  text-underline-offset: 25%;  
 }
 
 .footer__social-list {
